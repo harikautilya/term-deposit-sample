@@ -10,7 +10,7 @@ echo "Starting $NAME as `whoami`"
 
 # Activate the virtual environment
 cd $DJANGODIR
-source /home/ubuntu/term-deposit-sample/server/bin/activate
+. /home/ubuntu/term-deposit-sample/server/bin/activate
 export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
 export PYTHONPATH=$DJANGODIR:$PYTHONPATH
 
