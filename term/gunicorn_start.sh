@@ -1,10 +1,10 @@
 NAME="termServer"                                                     # Name of the application
-DJANGODIR=/home/ubuntu/term-deposit-sample/term             # Django project directory
+DJANGODIR=/home/ubuntu/term-deposit-sample                  # Django project directory
 SOCKFILE=/home/ubuntu/term-deposit-sample/term/run/gunicorn.sock  # we will communicte using this unix socket
 USER=ubuntu                                                         # the user to run as
 NUM_WORKERS=3                                                       # how many worker processes should Gunicorn spawn
-DJANGO_SETTINGS_MODULE=term.settings                            # which settings file should Django use
-DJANGO_WSGI_MODULE=term.wsgi                                    # WSGI module name
+DJANGO_SETTINGS_MODULE=term.term.settings                            # which settings file should Django use
+DJANGO_WSGI_MODULE=term.term.wsgi                                    # WSGI module name
 
 echo "Starting $NAME as `whoami`"
 
