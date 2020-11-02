@@ -8,7 +8,4 @@ This is a sample exceution for the term deposit project
 
 Note: No need to migrate the project as we dont use any of the admin system and django mainframe
 
-sudo cp supervisor.conf /etc/supervisor/conf.d/
-sudo supervisorctl reread
-sudo service supervisor restart all
-sudo supervisorctl status
+Deployment link : http://ec2-18-212-39-210.compute-1.amazonaws.com/
