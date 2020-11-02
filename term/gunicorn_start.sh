@@ -27,5 +27,5 @@ exec server/bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
   --bind=unix:$SOCKFILE \
   --log-level=debug \
   --access-logfile /var/log/gunicorn-access.log \
-  --error-logfile /var/log/gunicorn-error.log
+  --error-logfile t
   
