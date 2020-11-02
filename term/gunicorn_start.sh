@@ -29,4 +29,3 @@ exec server/bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
   --access-logfile /var/log/gunicorn-access.log \
   --error-logfile /var/log/gunicorn-error.log
   
-sudo apt-get install libxml2-dev libxslt1-dev zlib1g-dev  libgnutls28-dev default-libmysqlclient-dev
