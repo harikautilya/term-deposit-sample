@@ -3,14 +3,14 @@ DJANGODIR=/home/ubuntu/term-deposit-sample                  # Django project dir
 SOCKFILE=/home/ubuntu/term-deposit-sample/term/run/gunicorn.sock  # we will communicte using this unix socket
 USER=ubuntu                                                         # the user to run as
 NUM_WORKERS=3                                                       # how many worker processes should Gunicorn spawn
-DJANGO_SETTINGS_MODULE=term.term.settings                            # which settings file should Django use
-DJANGO_WSGI_MODULE=term.term.wsgi                                    # WSGI module name
+DJANGO_SETTINGS_MODULE=term.settings                            # which settings file should Django use
+DJANGO_WSGI_MODULE=term.wsgi                                    # WSGI module name
 
 echo "Starting $NAME as `whoami`"
 
 # Activate the virtual environment
 cd $DJANGODIR
-. /home/ubuntu/term-deposit-sample/server/bin/activate
+. /home/ubuntu/term-deposit-sample/term/server/bin/activate
 export DJANGO_SETTINGS_MODULE=$DJANGO_SETTINGS_MODULE
 export PYTHONPATH=$DJANGODIR:$PYTHONPATH
 
