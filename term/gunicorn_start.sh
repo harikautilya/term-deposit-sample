@@ -26,6 +26,7 @@ exec server/bin/gunicorn ${DJANGO_WSGI_MODULE}:application \
   --user=$USER  \
   --bind=unix:$SOCKFILE \
   --log-level=debug \
-  --log-file=-
+  --access-logfile /var/log/odoo/gunicorn-access.log \
+  --error-logfile /var/log/odoo/gunicorn-error.log
   
 sudo apt-get install libxml2-dev libxslt1-dev zlib1g-dev  libgnutls28-dev default-libmysqlclient-dev
